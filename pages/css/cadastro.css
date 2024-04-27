@@ -9,7 +9,7 @@
 
 body{
 
-    background-image: url(../img/game1.jpg);
+    background-image: url(../img/pretinho.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 100% 100%;
@@ -46,7 +46,11 @@ body{
 }
 
 #time img {
-    border-radius: 50%;
+    border-radius: 20%;
+    margin-top: 70px;
+    padding: 0px;
+    text-align: center;
+
 }
 
 #dia {
@@ -157,14 +161,24 @@ body{
 
 .form-wrapper {
     margin:  auto;
-    margin-top: 60px;
+    margin-top: 155px;
+    margin-bottom: auto;
     max-width: 400px; /* Ajuste conforme necessário */
+    position: relative;
+  
     background-image: url(../img/branco.avif); /* Substitua pelo caminho da sua imagem */
     background-repeat: no-repeat;
     background-size: cover;
     padding:80px; /* Adiciona algum espaço interno para melhorar a aparência */
     border: 4px solid #ccc; /* Adiciona uma borda */
-    border-radius: 100px; /* Arredonda as bordas */
+    border-radius: 95px; /* Arredonda as bordas */
+}
+@media screen and (max-width: 600px) {
+    .form-wrapper {
+       
+        border-radius: 50px; /* Reduz o raio da borda para telas menores */
+        padding: 40px; /* Reduz o preenchimento interno para telas menores */
+    }
 }
 
 form {
