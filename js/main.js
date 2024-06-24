@@ -1,16 +1,16 @@
 // main.js
 
 function loginUser() {
-    const email = document.querySelector('input[name="email"]').value;
+    const username = document.querySelector('input[name="username"]').value; // Alterado para username
     const password = document.querySelector('input[name="password"]').value;
 
     fetch('http://localhost:3000/auth/login', {
         method: 'POST',
-        mode: 'no-cors', // alterar para no cors, caso queira continuar sem configurar o cors no back
+        mode: 'cors', // Alterado para cors se o servidor estiver configurado para CORS
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ username, password }), // Alterado para username
     })
     .then(response => {
         if (!response.ok) {
@@ -20,13 +20,12 @@ function loginUser() {
     })
     .then(data => {
         console.log('Usuário logado:', data);
-        window.location.href = '/cadastro.html'; // Redirecionar após o login
+        // Redirecionar para a página desejada após o login
+        window.location.href = '/cadastro.html'; // Exemplo: redireciona para a página de dashboard
     })
     .catch(error => {
         console.error('Erro ao fazer login:', error.message);
         // Tratar erro de login aqui, como exibir uma mensagem de erro na tela
     });
 }
-
-
 
