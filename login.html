@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>Fazer login</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Anime</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Conta</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="principal">
+        <h2><img src="img/game.png" alt="Logo"></h2>
+
+        <form action="/login" method="post">
+            <div id="email">
+                <input type="email" name="email" id="email" placeholder="E-mail ou Usuário" required>
+            </div>
+
+            <div id="senha">
+                <input type="password" name="password" id="senha" placeholder="Senha" required>
+            </div>
+
+            <div id="login">
+                <input type="checkbox" id="mantenhaLogado">
+                <label for="mantenhaLogado">Mantenha me logado por favor!</label>
+            </div>
+
+            <div id="enviar">
+                <input type="submit" value="Play"><br><br>
+            </div>
+        </form>
+
+        <span class="create">
+            <a href="#">Não consegue fazer login?</a>
+            <a href="#">Criar Conta</a>
+        </span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "animes-e-jogos",
+  "version": "1.0.0",
+  "description": "Um site direcionado para mostrarmos todas as atualizações dos animes e jogos mais recentes, para isso teremos um site totalmente ilustrativo e com usabilidade de cadastro para usufruir",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sql": "teste"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.10.1",
+    "sequelize": "^6.37.3",
+    "bcrypt": "^5.0.1"
+    
+  }
+}
