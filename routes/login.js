@@ -1,12 +1,12 @@
 const express = require('express');
-const User = require('../models/User'); // Importe o modelo User conforme necessário
+const User = require('../models/User'); 
 const router = express.Router();
 
 // Rota para buscar todos os logins
 router.get('/', async (req, res) => {
     try {
         const logins = await User.findAll({
-            attributes: ['id', 'username', 'email', 'createdAt', 'password']
+            attributes: ['id','password', 'username']
             // Adicione mais filtros ou ordens conforme necessário
         });
 
