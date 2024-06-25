@@ -7,7 +7,7 @@ router.get('/', async (req, res) => {
     try {
         const logins = await User.findAll({
             attributes: ['id','password', 'username']
-            // Adicione mais filtros ou ordens conforme necessário
+            // filtros dos logins e informações 
         });
 
         res.json(logins);
